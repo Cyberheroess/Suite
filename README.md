@@ -83,6 +83,6 @@ Risk Score: 0.78/1.0
 <div align="center">
 
 **🦸 Built for Cyber Heroes**  
-*AI-Powered Security Intelligence*
+*Security Intelligence*
 
 </div>
