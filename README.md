@@ -1,7 +1,7 @@
 <img width="1536" height="1024" alt="17621085234112299599718878647706" src="https://github.com/user-attachments/assets/ddda3ff8-9fe0-4f74-96f6-da8b38d5c7a0" />
 
 
-# 🔥 Suite 
+# 🔎 Suite 
 
 <div align="center">
 
