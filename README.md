@@ -5,8 +5,8 @@
 
 <div align="center">
 
-**⚡ Next-Gen AI Security Assessment Platform**  
-*Quantum • Deep Learning • Blockchain • Federated AI*
+**⚡ Security Assessment Platform**  
+*Quantum • Deep Learning • Blockchain*
 
 ![Version](https://img.shields.io/badge/Version-6.0_Quantum-purple)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
