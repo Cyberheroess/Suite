@@ -37,7 +37,6 @@ python suite.py https://target.com
 
 ## ✨ Key Features
 
-- **🤖 AI-Driven Analysis** - Neural networks for pattern recognition
 - **⚛️ Quantum Algorithms** - Enhanced security assessment
 - **🌐 Distributed Computing** - Blockchain-backed nodes
 - **📊 Predictive Analytics** - Future threat forecasting
